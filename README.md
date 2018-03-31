@@ -7,7 +7,7 @@ Run this on a Linux Machine (whether it be an AWS EC2 Linux Server or Local Linu
 
 1) Keys Retrieval
 ```
-###Create Twitter Developer Account
+#Create Twitter Developer Account
 Go to https://apps.twitter.com/ and create new app
 Click on the “Users” tab
 Create new user
@@ -17,7 +17,7 @@ Consumer Secret (API Secret) == TWITTER_CONSUMER_SECRET
 Access Token == TWITTER_ACCESS_TOKEN
 Access Token Secret == TWITTER_ACCESS_TOKEN_SECRET
 
-###Create AWS Development Account
+#Create AWS Development Account
 Go to https://console.aws.amazon.com/iam/home#/home
 Generate Access Key
 Access Key ID == AWS_APP_KEY
@@ -39,7 +39,7 @@ export TWITTER_ACCESS_TOKEN= <key>
 export TWITTER_ACCESS_TOKEN_SECRET= <key> 
 ```
 
-3)) Confirm that Env Variables have been set
+3) Confirm that Env Variables have been set
 ```
 printenv AWS_APP_KEY
 printenv AWS_APP_SECRET
@@ -50,18 +50,18 @@ printenv TWITTER_ACCESS_TOKEN
 printenv TWITTER_ACCESS_TOKEN_SECRET
 ```
 
-4)) Confirm that you have Python, install it if you don't have it
+4) Confirm that you have Python, install it if you don't have it
 
 ```
 python -V
 ```
 
-5)) Confirm that you have pip, install it if you don't have it
+5) Confirm that you have pip, install it if you don't have it
 ```
 pip -V
 ```
 
-6)) Install virtualenv
+6) Install virtualenv
 ```
 pip install virtualenv
 ```
@@ -80,14 +80,15 @@ virtualenv -p /path/to/python3 .env
 
 ## Test Whether it Works
 
-1) Replace every reference of “brothaakhee” with your own Twitter ID in the "accounts.py" file
+1) Replace every reference of “brothaakhee” with your own Twitter Handle and ID in the "accounts.py" file
+   Use http://gettwitterid.com/?user_name=BobJohn68918112&submit=GET+USER+ID to get the Twitter ID for your Twitter Handle/Username.
 
 Use `python3 consumer.py` to start streaming listener, or use supervisor to keep the process running.
 
 ```
 
 Each account you want to follow should be added to `consumer.py` through its ID. The ID should be a string.
-Use an online tool to look up a twitter handle's ID, and then map that to a variable with the name of the handle.
+Use an online tool(http://gettwitterid.com/?user_name=BobJohn68918112&submit=GET+USER+ID ) to look up a twitter handle's ID, and then map that to a variable with the name of the handle.
 
 `brothaakhee = '123456'`
 
@@ -101,3 +102,5 @@ That variable should then be mapped to the keywords you want to alert on through
     }
 }
 ```
+
+2) 

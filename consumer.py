@@ -28,14 +28,15 @@ class TweetListener(StreamListener):
     This is a basic listener that just prints received tweets to stdout.
     """
     def on_data(self, data):
-        print('incoming data')
+        print('')
+        print('Incoming Tweet')
         try:
             list_data = json.loads(data)
             username = list_data['user']['screen_name']
             user_id = list_data['user']['id_str']
             tweet = list_data['text'].lower()
-            print(username)
-            print(tweet)
+            print('Username: '+username)
+            print('Tweet: '+tweet)
             tweet_url = 'https://twitter.com/{}/status/{}'.format(
                 username,
                 list_data['id_str']
@@ -49,8 +50,7 @@ class TweetListener(StreamListener):
         user_keywords = KEYWORDS_MAP.get(user_id)
 
         if not user_keywords:
-            print('dont have user for user id: ')
-            print(user_id)
+            print('Do Not have user for user id: '+user_id)
             return
 
         if (user_keywords['any'] and any(keyword.lower() in tweet for keyword in user_keywords['any'])) or \
@@ -87,7 +87,9 @@ if __name__ == '__main__':
         twitter_credentials['access_token'],
         twitter_credentials['access_token_secret'],
     )
-
+    print('---------------------')
+    print('Starting Listener Now')
+    print('---------------------')
     listener = TweetListener()
 
     stream = Stream(auth=auth, listener=listener)
