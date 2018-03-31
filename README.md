@@ -93,8 +93,6 @@ Use an online tool(http://gettwitterid.com/?user_name=BobJohn68918112&submit=GET
 `brothaakhee = '123456'`
 
 That variable should then be mapped to the keywords you want to alert on through a dict.
-
-```
 {
     brothaakhee: {
         'all': ['keywords', 'that', 'should', 'all', 'be', 'present'],
@@ -118,4 +116,7 @@ Might be located in /usr/bin
 virtualenv -p /usr/bin/python2.7 .env
 ```
 
-5) 
+5) Run Twitter Bot
+```
+python consumer.py
+```
