@@ -1,9 +1,12 @@
 # twitter-alerts
 Scan tweets for keywords and alert
+Run this on a Linux Machine (whether it be an AWS EC2 Linux Server or Local Linux VM).
 
+## Setup Environment
+----------------------------------------------------------------
 
 1) Confirm that you have Python, install it if you don't have it
-----------------------------------------------------------------
+
 ```
 python -V
 ```
@@ -44,11 +47,12 @@ pip install -r requirements.txt
 
 6) Create a virtual environment
 ```
-`virtualenv -p /path/to/python3 .env'
+virtualenv -p /path/to/python3 .env
 ```
 
 
-
+## Test Whether it Works
+----------------------------------------------------------------
 Use `python3 consumer.py` to start streaming listener, or use supervisor to keep the process running.
 
 ```
