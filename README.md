@@ -81,7 +81,7 @@ virtualenv -p /path/to/python3 .env
 ## Test Whether it Works
 
 1) Replace every reference of “brothaakhee” with your own Twitter Handle and ID in the "accounts.py" file
-   Use http://gettwitterid.com/?user_name=BobJohn68918112&submit=GET+USER+ID to get the Twitter ID for your Twitter Handle/Username.
+   Use http://gettwitterid.com/?user_name=BobJohn68918112&submit=GET+USER+ID to get the Twitter ID for your Twitter Handle/Username and place it in "accounts.py" file accordingly
 
 Use `python3 consumer.py` to start streaming listener, or use supervisor to keep the process running.
 
@@ -103,4 +103,19 @@ That variable should then be mapped to the keywords you want to alert on through
 }
 ```
 
-2) 
+2) Get the version of python the "python" call has a link to 
+```
+python -V
+```
+
+3) Locate the binary for that python version
+```
+Might be located in /usr/bin
+```
+
+4) Create Virtual Environment
+```
+virtualenv -p /usr/bin/python2.7 .env
+```
+
+5) 

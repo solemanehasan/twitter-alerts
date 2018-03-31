@@ -29,7 +29,7 @@ class TweetListener(StreamListener):
     """
     def on_data(self, data):
         print('')
-        print('Incoming Tweet')
+        print('Incoming Tweet: If this Tweet contains ')
         try:
             list_data = json.loads(data)
             username = list_data['user']['screen_name']
@@ -87,9 +87,9 @@ if __name__ == '__main__':
         twitter_credentials['access_token'],
         twitter_credentials['access_token_secret'],
     )
-    print('---------------------')
-    print('Starting Listener Now')
-    print('---------------------')
+    print('------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+    print('Welcome to "Twitter-Bot".  This bot will receive incoming Tweets.  If it catches a Tweet with special keywords, the recipients will be notified immediately via AWS SNS (SMS).  Starting Listener Now')
+    print('------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
     listener = TweetListener()
 
     stream = Stream(auth=auth, listener=listener)
