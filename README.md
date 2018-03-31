@@ -1,28 +1,56 @@
 # twitter-alerts
 Scan tweets for keywords and alert
 
-Uses Python3.6
 
-Create a virtual environment
+1) Confirm that you have Python, install it if you don't have it
+----------------------------------------------------------------
+```
+python -V
+```
 
-`virtualenv -p /path/to/python3 .env`
+2) Confirm that you have pip, install it if you don't have it
+```
+> pip -V
+```
 
-Install requirements
+3) Set Env Variables
+```
+export AWS_APP_KEY= <key> 
+export AWS_APP_SECRET= <key> 
+export AWS_TOPIC_ARN= <key> 
+export TWITTER_CONSUMER_KEY= <key> 
+export TWITTER_CONSUMER_SECRET= <key> 
+export TWITTER_ACCESS_TOKEN= <key> 
+export TWITTER_ACCESS_TOKEN_SECRET= <key> 
+```
 
-`pip install -r requirements.txt`
+4) Confirm that Env Variables have been set
+```
+printenv AWS_APP_KEY
+printenv AWS_APP_SECRET
+printenv AWS_TOPIC_ARN
+printenv TWITTER_CONSUMER_KEY
+printenv TWITTER_CONSUMER_SECRET
+printenv TWITTER_ACCESS_TOKEN
+printenv TWITTER_ACCESS_TOKEN_SECRET
+```
+
+
+5) Install all required python modules
+```
+pip install -r requirements.txt
+```
+
+
+6) Create a virtual environment
+```
+`virtualenv -p /path/to/python3 .env'
+```
+
+
 
 Use `python3 consumer.py` to start streaming listener, or use supervisor to keep the process running.
-You will have to set up environment variables with your twitter and aws credentials.
 
-```
-TWITTER_CONSUMER_KEY=''
-TWITTER_CONSUMER_SECRET=''
-TWITTER_ACCESS_TOKEN=''
-TWITTER_ACCESS_TOKEN_SECRET=''
-
-AWS_APP_KEY=''
-AWS_APP_SECRET=''
-AWS_TOPIC_ARN=''
 ```
 
 Each account you want to follow should be added to `consumer.py` through its ID. The ID should be a string.

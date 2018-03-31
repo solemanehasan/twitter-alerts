@@ -43,7 +43,7 @@ class TweetListener(StreamListener):
 
         except:
             print(list_data)
-            print('Something went wrong with that tweet.')
+            print('ERROR: Something went wrong with that tweet.')
             return
 
         user_keywords = KEYWORDS_MAP.get(user_id)
@@ -61,13 +61,13 @@ class TweetListener(StreamListener):
                 aws_secret_access_key=aws_creds['secret'],
                 region_name='us-east-1'
             )
-            print('tweet matched keyword')
+            print('SUCCESS: tweet matched keyword')
             msg = '{} tweeted: {} ---- {}'.format(
                 username,
                 tweet,
                 tweet_url,
             )
-            print('sending to sns to send text')
+            print('Sending Tweet to AWS SNS Service to send texts to recipients')
             client.publish(Message=msg, TopicArn=aws_creds['topic_arn'])
 
     def on_error(self, status):
@@ -77,6 +77,8 @@ class TweetListener(StreamListener):
 
 if __name__ == '__main__':
     print(twitter_credentials)
+
+	
     auth = OAuthHandler(
         twitter_credentials['consumer_key'],
         twitter_credentials['consumer_secret']
