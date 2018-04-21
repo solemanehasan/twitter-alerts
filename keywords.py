@@ -1,4 +1,5 @@
-partnership_keywords = [
+buzzwords_keywords = [
+    # Partnership/Collaborations
     'official',
     'partner',
     'congrat',
@@ -25,43 +26,28 @@ partnership_keywords = [
     'looking forward',
     'is here',
     'has arrive',
-]
-
-exchange_keywords = [
-    'list',
+	'big announcement',
+	'great news',
+	'astounding',
+	'microsoft',
+	'apple',
+	'government',
+	'national',
+	'alliance',
+	'partnership',
+	'collaboration',
+	'joint',
+	'upgrade',
+	
+	# Exchange Keywords
+	'list',
     'distribute',
     'add',
     'token',
     'ico',
-]
-
-social_media_giants = [
-    'messenger',
-    'whatsapp',
-    'wechat',
-    'qq chat',
-    'instagram',
-    'qzone',
-    'viber',
-    'line',
-    'snapchat',
-    'yy',
-    'facebook',
-    ' twitter',
-    'linkedin',
-    'google',
-    'youtube',
-    'pinterest',
-    'tumblr',
-    'reddit',
-    'flickr',
-    'kik',
-    'weibo',
-    'tencent',
-]
-
-companies = [
-    'Walmart',
+	
+	# Companies
+	'Walmart',
     'Exxon Mobil',
     'Apple',
     'Berkshire Hathaway',
@@ -118,7 +104,6 @@ companies = [
     'Dow Chemical',
     'Sysco',
     'FedEx',
-    'Caterpillar',
     'Lockheed Martin',
     'New York Life Insurance',
     'Coca-Cola',
@@ -148,8 +133,6 @@ companies = [
     'Gilead Sciences',
     'Publix Super Markets',
     'General Dynamics',
-    'TJX',
-    'ConocoPhillips',
     'Nike',
     'World Fuel Services',
     '3M',
@@ -163,7 +146,6 @@ companies = [
     'DuPont',
     'Avnet',
     'Enterprise Products Partners',
-    'Travelers Cos.',
     'Philip Morris International',
     'Rite Aid',
     'Tech Data',
@@ -550,5 +532,28 @@ companies = [
     'NVR',
     'Cincinnati Financial',
     'Burlington Stores',
+	
+	# Social Media Giants
+	'messenger',
+    'whatsapp',
+    'wechat',
+    'qq chat',
+    'instagram',
+    'qzone',
+    'viber',
+    'line',
+    'snapchat',
+    'yy',
+    'facebook',
+    ' twitter',
+    'linkedin',
+    'google',
+    'youtube',
+    'pinterest',
+    'tumblr',
+    'reddit',
+    'flickr',
+    'kik',
+    'weibo',
+    'tencent',
 ]
-

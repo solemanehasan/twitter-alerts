@@ -1,4 +1,4 @@
-from keywords import companies, social_media_giants, partnership_keywords, exchange_keywords
+from keywords import buzzwords_keywords
 
 
 # users
@@ -11,39 +11,231 @@ cryptogrinders = '909505279275843584'
 
 
 # coins
-neo = '2592325530'
-burst = '2937820937'
-stellar_lumens = '2460502890'
-request_network = '888343534083944448'
-cardano = '825920479055671296'
-ethos = '862007728956485632'
-substratum = '888794609509433347'
-waves = '707515829798182912'
-quantstamp = '06057790707216384'
-trustwallet = '911011433147654144'
-kybernetwork = '865963965649571840'
-pivx = '4020178512'
-navcoin = '2532881881'
-lisk = '4736263474'
-ethereum = '2312333412'
-stratis = '734688391942524928'
-dash = '2338506822'
-monero = '2478439963'
-quantum = '773009781644677120'
-civic = '4711101020'
-tenx = '4585412124'
-omisego = '831847934534746114'
-tron = '1932662798'
-zeroxproject = '826699259441328128'
 wabi = '885426541185818625'
-icon = '889691121000996864'
-vechain = '908576143975919616'
-nuls = '912987663052836864'
-qtum = '773009781644677120'
-powr = '739770876808167424'
-walton = '903434091650883586'
-chainlink = '129411313'
-iota = '3992601857'
+Ethereum = '2312333412'
+BitcoinCash = '176758255'
+IOTA = '3992601857'
+Ripple = '1051053836'
+Litecoin = '1393174363'
+Dash = '2338506822'
+Monero = '2478439963'
+BitcoinGold = '908863693248593920'
+NEM = '2313671966'
+Cardano = '4135644558'
+EthereumClassic = '759252279862104064'
+StellarLumens = '2460502890'
+NEO = '2592325530'
+EOS = '862675563693125632'
+Populous = '808032684270354433'
+Waves = '707515829798182912'
+Lisk = '4736263474'
+Stratis = '734688391942524928'
+Zcash = '4633094778'
+Qtum = '773009781644677120'
+OmiseGO = '831847934534746114'
+Nxt = '2243862290'
+Hshare = '877078771366453248'
+Ardor = '744075632997470208'
+Bytecoin = '2510084300'
+BitShares = '503238457'
+Steem = '711030662728437760'
+Einsteinium = '2366835468'
+Decred = '2349043879'
+Ark = '774791455680434176'
+Vertcoin = '2275810436'
+Augur = '2895317462'
+Komodo = '769457743807844352'
+Dogecoin = '2235729541'
+TRON = '894231710065446912'
+BinanceCoin = '877807935493033984'
+Siacoin = '3351041295'
+QASH = '3023646139'
+Golem = '4053977488'
+PIVX = '4020178512'
+TenX = '4585412124'
+MaidSafeCoin = '1322660676'
+DigixDAO = '2925093697'
+ByteballBytes = '773447880564731904'
+Status = '774689518767181828'
+PowerLedger = '739770876808167424'
+ExchangeUnion = '885438883126624256'
+Decentraland = '3291830170'
+SantimentNet = '776078472477347840'
+Walton = '903434091650883586'
+BasicAttenti = '841424245938769920'
+Factom = '2804855658'
+Syscoin = '119060937'
+KyberNetwork = '865963965649571840'
+Bytom = '897349629385232388'
+Gas = '2592325530'
+RaidenNetwor = '907209378331336705'
+ZCoin = '810263154458578944'
+GameCredits = '3094365867'
+Aeternity = '760049490187386880'
+Iconomi = '725253338640617472'
+Monaco = '864347902029709314'
+Nano = '704476690139885568'
+VeChain = '908576143975919616'
+DigiByte = '2266631022'
+Gnosis = '3448833448'
+Nexus = '2575764354'
+Verge = '4826209539'
+Blocknet = '2842476639'
+zero_x = '826699259441328128'
+Bancor = '816646997356777472'
+Civic = '4711101020'
+NAVCoin = '2532881881'
+Dragonchain = '769430199985332228'
+RequestNetwork = '888343534083944448'
+Ethos = '862007728956485632'
+Metal = '3111739836'
+Skycoin = '843014705618870273'
+Aion = '880423818594070528'
+Edgeless = '805450407078203392'
+GXShares = '767645185962455040'
+StreamrDATAcoin = '2797935057'
+MinexCoin = '761588458095796224'
+ChainLink = '2904107388'
+Storj = '345738416'
+RChain = '811762043451801600'
+MetaverseETP = '879244998876708864'
+Achain = '908158324167675904'
+Revain = '866969628534243332'
+Substratum = '888794609509433347'
+Particl = '835194759178244096'
+BitBay = '2337136418'
+SingularDTV = '736586614797783040'
+Ubiq = '2917040642'
+Groestlcoin = '2425322684'
+Feathercoin = '1457614386'
+ZenCash = '873936272976474113'
+Quantstamp = '906057790707216384'
+AdEx = '869908314292924416'
+Aragon = '828668619986964480'
+YOYOW = '776803955301093376'
+QuantumResis = '840228005372874753'
+Loopring = '9130922'
+ATMChain = '913324073823870977'
+Cobinhood = '895231138909659137'
+RipioCredit = '902262803557482496'
+SONM = '818371891937296384'
+Eidoo = '843372242381783044'
+Wings = '732169766450954240'
+Kin = '864152888720977921'
+WeTrust = '785214387007041536'
+Melon = '763039521936203776'
+Neblio = '878291606830542848'
+Voxels = '488068087'
+SafeExchange = '4252750574'
+iExecRLC = '775658150179508224'
+Enigma = '3305325070'
+KuCoinShares = '910110294625492992'
+Pillar = '838079168537587712'
+AirSwap = '856193547976028161'
+CoinDash = '922077056309121025'
+TaaS = '826744598273912832'
+CloakCoin = '2289036295'
+Tierion = '1201353103'
+EnjinCoin = '20356963'
+Modum = '719994873491931136'
+NoLimitCoin = '762578100563554304'
+I/OCoin = '2648931079'
+FirstBlood = '749620531062800384'
+Numeraire = '4469439315'
+LBRYCredits = '2863324024'
+Ambrosus = '882330272280322050'
+Grid+ = '862458216843628544'
+Cindicator = '4871918301'
+district0x = '865213817466142724'
+Dentacoin = '802952526542893061'
+Burst = '2937820937'
+SteemDollars = '711030662728437760'
+Matchpool = '810926186067066880'
+Dent = '872093043305963521'
+Polybius = '806404856370102272'
+Aventus = '798522938689470465'
+Etherparty = '2965296846'
+EthLend = '867100084248469505'
+RedPulse = '2893134987'
+Humaniq = '806812777935437825'
+EncrypGen = '856628098539954178'
+Poet = '842473913997250566'
+TokenCard = '854054464717639681'
+Agrello = '4897921972'
+Monetha = '858954415176396800'
+GenesisVision = '868837446938742786'
+Nimiq = '860231756867416066'
+SunContract = '743468349649260545'
+adToken = '818911235286581248'
+NVO = '857618297537286144'
+VeriCoin = '2436257148'
+Mothership = '871155188131823617'
+DeepOnion = '877250426575482880'
+Mysterium = '158301496'
+Rivetz = '2347438777'
+Patientory = '4131784210'
+Chronobank = '783008720934416384'
+Neutron = '715334719458553857'
+Elixir = '882756655091507201'
+Divi = '883451582473531392'
+MercuryProtocol = '893215209896071168'
+IndorseToken = '861463172296974336'
+Aeron = '890522833381715968'
+Zephyr = '2481106008'
+ATLANT = '882877442498625536'
+Hedge = '887657807302066176'
+Publica = '894564726784569345'
+VeriumReserve = '4642511194'
+Bowhead = '4720175592'
+HubiiNetwork = '874921678526181376'
+Embers = '797930343277989888'
+GigaWattToken = '829442098373881856'
+Adelphoi = '739855309091508224'
+OysterPearl = '905044387347939328'
+Opus = '882744472865517568'
+BitcoinDiamo = '927804348859428864'
+CyberMiles = '900267964737478656'
+IoTChain = '932489752044961792'
+Electroneum = '874348944570159106'
+Nuls = '912987663052836864'
+Regalcoin = '881423513030082560'
+Bodhi = '878161269278167040'
+ICON = '889691121000996864'
+Qbao = '912860011428057088'
+onGsocial = '1341186853'
+TIESNetwork = '148458068'
+aelf = '903565929719541760'
+Cortex = '957095686914244609'
+Arcblock = '939679057297494022'
+IOStoken = '946758251902881792'
+Odyssey = '946273319036137472'
+WaykiChain = '945489465019064322'
+Propy = '4636067475'
+Elastos = '897748073501278208'
+Nebulas = '869962138932002817'
+Ontology = '922358568602365953'
+WAX = '897652496461680640'
+DATA = '949198041872912384'
+ThetaToken = '918994376105197568'
+Medicalchain = '883448012059672577'
+Zilliqa = '872984298973941764'
+MediShares = '902422244764172288'
+Ruff = '952769638022049793'
+YEE = '945892833965129728'
+SmartMesh = '912161022470897664'
+AIDoctor = '940150616113889281'
+LinkEye = '928912529639727104'
+Bluzelle = '3318365565'
+GenaroNetwork = '885436300957843456'
+EchoLink = '933002823238684672'
+DeepBrainChain = '932870849128001536'
+Wanchain = '883984505119297536'
+PundiX = '910043982306041856'
+Storm = '879923428794355714'
+NucleusVision = '913837178261663744'
+LoomNetwork = '912949947397439488'
+Polymath = '890365489658122242'
+HuobiToken = '914029581610377217'
 
 
 # exchanges
@@ -57,231 +249,22 @@ hitbtc = '1364642054'
 
 KEYWORDS_MAP = {
     # users
-    BobJohn68918112: {
-        'all': ['testing', 'blahblah'],
-        'any': ['wildcard', 'fake'],
-    },
-
-    mcafee: {
-        'all': ['coin', 'day'],
-        'any': [],
-    },
-
-    data_dash: {
-        'all': [],
-        'any': ['interview', 'review'],
-    },
-
-    cryptogrinders: {
-        'all': [],
-        'any': ['interview', 'review'],
-    },
-
-    vitalik: {
-        'all': [],
-        'any': ['casper', 'raiden'] + partnership_keywords,
-    },
-
-    charlie_lee: {
-        'all': [],
-        'any': ['lightning', 'atomic'] + partnership_keywords,
-    },
+    BobJohn68918112: { 'all': [], 'any': buzzwords_keywords, },
+    mcafee: { 'all': [], 'any': buzzwords_keywords, },
+    data_dash: { 'all': [], 'any': buzzwords_keywords, },
+    cryptogrinders: { 'all': [], 'any': buzzwords_keywords, },
+    vitalik: { 'all': [], 'any': buzzwords_keywords, },
+    charlie_lee: { 'all': [], 'any': buzzwords_keywords, },
 
     # coins
-    neo: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    burst: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    stellar_lumens: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    request_network: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    cardano: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    ethos: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    substratum: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    waves: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    quantstamp: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    trustwallet: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    kybernetwork: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    pivx: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    navcoin: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    lisk: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    ethereum: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    stratis: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    dash: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    monero: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    quantum: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    civic: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    tenx: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    omisego: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    tron: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    zeroxproject: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    wabi: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    icon: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    vechain: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    nuls: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    qtum: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    powr: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    chainlink: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    walton: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
-    iota: {
-        'all': [],
-        'any': partnership_keywords + companies + social_media_giants,
-    },
-
+    neo: { 'all': [], 'any': buzzwords_keywords, },
+    wabi: { 'all': [], 'any': buzzwords_keywords, },
 
     # exchanges
-    coinbase: {
-        'all': [],
-        'any': exchange_keywords,
-    },
-
-    gdax: {
-        'all': [],
-        'any': exchange_keywords,
-    },
-
-    poloniex: {
-        'all': [],
-        'any': exchange_keywords,
-    },
-
-    binance: {
-        'all': [],
-        'any': exchange_keywords,
-    },
-
-    bittrex: {
-        'all': [],
-        'any': exchange_keywords,
-    },
-
-    hitbtc: {
-        'all': [],
-        'any': exchange_keywords,
-    },
+    coinbase: { 'all': [], 'any': buzzwords_keywords, },
+	gdax: { 'all': [], 'any': buzzwords_keywords, },
+    poloniex: { 'all': [], 'any': buzzwords_keywords, },
+    binance: { 'all': [], 'any': buzzwords_keywords, },
+    bittrex: { 'all': [], 'any': buzzwords_keywords, },
+    hitbtc: { 'all': [], 'any': buzzwords_keywords, },
 }
