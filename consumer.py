@@ -1,7 +1,7 @@
 import os
 import json
 import boto3
-
+import tweepy
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler, Stream
 
@@ -23,7 +23,7 @@ aws_creds = {
 }
 
 
-class TweetListener(StreamListener):
+class TweetListener(tweepy.StreamListener):
     """ A listener handles tweets are the received from the stream.
     This is a basic listener that just prints received tweets to stdout.
     """
@@ -42,8 +42,9 @@ class TweetListener(StreamListener):
                 username,
                 list_data['id_str']
             )
+			# Have the bot output the overall 
             # print('Printing Tweet Data')
-            #  print(list_data)
+            # print(list_data)
             
 			#print('Fetching Tweet ID Data')			
             #tweet_id = list_data['entities']['id_str']
@@ -52,9 +53,16 @@ class TweetListener(StreamListener):
             #print('Fetched Retweet Count Data')
             #print('Retweet Count: '+retweet_count)
             #print('Tweet ID: '+tweet_id)
+            #print('Tweet ID: '+list_data['entities']['id_str'])
+			
+			# This damn block of code keeps causing the "except" to be thrown
+			# ---------------------------------------------------------------
+            # print('Fetching Retweet Count Data')
+            # retweet_count = list_data['user']['retweet_count']
+            # print('Retweet Count: '+retweet_count)
 
         except:
-            # print(list_data)
+            print(list_data)
             print('ERROR: Something went wrong with that tweet.')
             return
 
@@ -107,3 +115,6 @@ if __name__ == '__main__':
     stream = Stream(auth=auth, listener=listener)
     print('authenticated')
     stream.filter(follow=KEYWORDS_MAP.keys())
+	
+    tweet = twitter.show_status(id='987769125924728832')
+    print(tweet['text'])
