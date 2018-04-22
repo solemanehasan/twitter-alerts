@@ -4,7 +4,6 @@ import boto3
 import tweepy
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler, Stream
-
 from accounts import KEYWORDS_MAP
 
 
