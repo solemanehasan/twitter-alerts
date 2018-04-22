@@ -120,3 +120,8 @@ virtualenv -p /usr/bin/python2.7 .env
 ```
 python consumer.py
 ```
+
+Note:
+```
+Please be sure to run "find . –type f –print0 | xargs -0 dos2unix" prior to running the bot to make sure all files are in the proper UNIX format
+```

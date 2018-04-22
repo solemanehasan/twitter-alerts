@@ -34,10 +34,10 @@ buzzwords_keywords = [
 	'government',
 	'national',
 	'alliance',
-	'partnership',
 	'collaboration',
 	'joint',
 	'upgrade',
+	'collaborate',
 	
 	# Exchange Keywords
 	'list',

@@ -29,21 +29,32 @@ class TweetListener(StreamListener):
     """
     def on_data(self, data):
         print('')
-        print('Incoming Tweet: If this Tweet contains ')
         try:
             list_data = json.loads(data)
+            print('Fetched JSON Data')
             username = list_data['user']['screen_name']
             user_id = list_data['user']['id_str']
             tweet = list_data['text'].lower()
             print('Username: '+username)
             print('Tweet: '+tweet)
+
             tweet_url = 'https://twitter.com/{}/status/{}'.format(
                 username,
                 list_data['id_str']
             )
+            # print('Printing Tweet Data')
+            #  print(list_data)
+            
+			#print('Fetching Tweet ID Data')			
+            #tweet_id = list_data['entities']['id_str']
+            #print('Fetched Tweet ID Data')
+            #retweet_count = list_data['entities']['retweet_count']
+            #print('Fetched Retweet Count Data')
+            #print('Retweet Count: '+retweet_count)
+            #print('Tweet ID: '+tweet_id)
 
         except:
-            print(list_data)
+            # print(list_data)
             print('ERROR: Something went wrong with that tweet.')
             return
 
@@ -51,6 +62,7 @@ class TweetListener(StreamListener):
 
         if not user_keywords:
             print('Do Not have user for user id: '+user_id)
+            print('Returning')
             return
 
         if (user_keywords['any'] and any(keyword.lower() in tweet for keyword in user_keywords['any'])) or \
