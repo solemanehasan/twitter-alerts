@@ -1,6 +1,7 @@
 # twitter-alerts
 Scan tweets for keywords and alert
 Run this on a Linux Machine (whether it be an AWS EC2 Linux Server or Local Linux VM).
+Please note: This variant of the bot is geared towards notifying the user(s) of exchange listings
 
 
 ## Setup
