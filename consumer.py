@@ -41,24 +41,6 @@ class TweetListener(tweepy.StreamListener):
                 username,
                 list_data['id_str']
             )
-			# Have the bot output the overall 
-            # print('Printing Tweet Data')
-            # print(list_data)
-            
-			#print('Fetching Tweet ID Data')			
-            #tweet_id = list_data['entities']['id_str']
-            #print('Fetched Tweet ID Data')
-            #retweet_count = list_data['entities']['retweet_count']
-            #print('Fetched Retweet Count Data')
-            #print('Retweet Count: '+retweet_count)
-            #print('Tweet ID: '+tweet_id)
-            #print('Tweet ID: '+list_data['entities']['id_str'])
-			
-			# This damn block of code keeps causing the "except" to be thrown
-			# ---------------------------------------------------------------
-            # print('Fetching Retweet Count Data')
-            # retweet_count = list_data['user']['retweet_count']
-            # print('Retweet Count: '+retweet_count)
 
         except:
             print(list_data)
@@ -115,5 +97,3 @@ if __name__ == '__main__':
     print('authenticated')
     stream.filter(follow=KEYWORDS_MAP.keys())
 	
-    tweet = twitter.show_status(id='987769125924728832')
-    print(tweet['text'])
