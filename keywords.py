@@ -3,6 +3,7 @@ buzzwords_keywords = [
     'official',
     'partner',
     'big announcement',
+	'announce',
     'great news',
     'government',
     'national',
@@ -10,6 +11,8 @@ buzzwords_keywords = [
     'partnership',
     'collab',
     'upgrade',
+	'release',
+	'launch',
 	
 	# Exchange Keywords
     'list',
