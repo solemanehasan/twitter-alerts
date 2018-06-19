@@ -25,4 +25,6 @@ buzzwords_keywords = [
     'available',
     'new',
     'support',
+	'Launch of',
+	'launch',
 ]

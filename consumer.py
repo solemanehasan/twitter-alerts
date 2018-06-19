@@ -43,7 +43,7 @@ class TweetListener(tweepy.StreamListener):
             )
 
         except:
-            print(list_data)
+            # print(list_data)
             print('ERROR: Something went wrong with that tweet.')
             return
 
@@ -77,6 +77,7 @@ class TweetListener(tweepy.StreamListener):
 
 
 if __name__ == '__main__':
+    print('Starting Twitter Bot')
     print(twitter_credentials)
 
 	
