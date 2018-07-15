@@ -12,10 +12,10 @@ buzzwords_keywords = [
     'collab',
     'upgrade',
     'release',
-	'announcing'
-	'announced',
+    'announcing'
+    'announced',
 
-	# Exchange Keywords
+        # Exchange Keywords
     'list',
     'distribute',
     'add',
@@ -26,11 +26,11 @@ buzzwords_keywords = [
     'available',
     'new',
     'support',
-	'Launch of',
-	'launch',
-	'launced',
-	'launching',
-	'addition',
-	'added',
-	'adding',
+    'Launch of',
+    'launch',
+    'launched',
+    'launching',
+    'addition',
+    'added',
+    'adding',
 ]
